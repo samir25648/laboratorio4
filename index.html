@@ -3,61 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi primer Formulario</title>
+    <title>Formulario</title>
 </head>
 <body>
+    <h1 >Formulario</h1>
     <form>
-        <table border="0" width ="100%">
+        <table>
             <tr>
-                <th colspan="4">Datos personales</th>
+                <td>Nombre:</td>
+                <td><input type="text" name="nombre" required></td>
             </tr>
             <tr>
-                <td width ="20%"></td>
-                <td width ="30%"><label for="name">Nombre y Apellidos</label></td>
-                <td width ="30%"><input type="text" name="name" id="name"></td>
-                <td width ="20%"></td>
+                <td>Apellido:</td>
+                <td><input type="text" name="apellido" required></td>
             </tr>
-
             <tr>
-                <td width ="20%"></td>
-                <td width ="30%"><label for="name">Dirección</label></td>
-                <td width ="30%"><input type="text" name="name" id="name"></td>
-                <td width ="20%"></td>
+                <td>Correo:</td>
+                <td><input type="email" name="correo" required></td>
             </tr>
-
             <tr>
-                <td width = "20%"></td>
-                <td colspan="2">
-                    <input type="radio" id="nombre" name="genero">
-                    <label for="hombre">Hombre</label>
-                    <input type="radio" id="mujer" name="genero"> 
-                    <label for="mujer">Mujer</label>
-                    <input type="radio" id="otro" name="genero">
-                    <label for="otro">Otro</label>
-                </td>
-                <td width = "20%"></td>
+                <td>Teléfono:</td>
+                <td><input type="tel" name="telefono" required></td>
             </tr>
-
             <tr>
-                <td width ="20%"></td>
-                <td width ="30%"><label for="name">Idioma</label></td>
-                <td width ="30%">
-                    <select name="idioma" id="idioma" name="lenguajes">
-                        <option value="es">Español</option>
-                        <option value="en">Inglés</option>
-                        <option value="fr">Francés</option>
-                        <option value="it">Italiano</option>
+                <td>País:</td>
+                <td>
+                    <select name="pais" required>
+                        <option value="">Seleccionar</option>
+                        <option value="Argentina">Argentina</option>
+                        <option value="Brasil">Brasil</option>
+                        <option value="Chile">Chile</option>
+                        <option value="Colombia">Colombia</option>
+                        <option value="México">México</option>
+                        <option value="Perú">Perú</option>
+                        <option value="Otros">Otros</option>
                     </select>
                 </td>
-                <td width ="20%"></td>
             </tr>
-
             <tr>
-                <td width ="20%"></td>
-                <td colspan="2">
-                    <textarea name="description" id="description"></textarea>
-                </td>
-                <td width ="20%"></td>
+                <td>Comentario:</td>
+                <td><textarea name="comentario" rows="4" cols="50" required></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" value="Enviar"></td>
             </tr>
         </table>
     </form>
