@@ -3,9 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mi primer Formulario</title>
 </head>
 <body>
-    
+    <form>
+        <table border="0" width ="100%">
+            <tr>
+                <th colspan="4">Datos personales</th>
+            </tr>
+            <tr>
+                <td width ="20%"></td>
+                <td width ="30%"><label for="name">Nombre y Apellidos</label></td>
+                <td width ="30%"><input type="text" name="name" id="name"></td>
+                <td width ="20%"></td>
+            </tr>
+
+            <tr>
+                <td width ="20%"></td>
+                <td width ="30%"><label for="name">Dirección</label></td>
+                <td width ="30%"><input type="text" name="name" id="name"></td>
+                <td width ="20%"></td>
+            </tr>
+
+            <tr>
+                <td width = "20%"></td>
+                <td colspan="2">
+                    <input type="radio" id="nombre" name="genero">
+                    <label for="hombre">Hombre</label>
+                    <input type="radio" id="mujer" name="genero"> 
+                    <label for="mujer">Mujer</label>
+                    <input type="radio" id="otro" name="genero">
+                    <label for="otro">Otro</label>
+                </td>
+                <td width = "20%"></td>
+            </tr>
+
+            <tr>
+                <td width ="20%"></td>
+                <td width ="30%"><label for="name">Idioma</label></td>
+                <td width ="30%">
+                    <select name="idioma" id="idioma" name="lenguajes">
+                        <option value="es">Español</option>
+                        <option value="en">Inglés</option>
+                        <option value="fr">Francés</option>
+                        <option value="it">Italiano</option>
+                    </select>
+                </td>
+                <td width ="20%"></td>
+            </tr>
+
+            <tr>
+                <td width ="20%"></td>
+                <td colspan="2">
+                    <textarea name="description" id="description"></textarea>
+                </td>
+                <td width ="20%"></td>
+            </tr>
+        </table>
+    </form>
 </body>
 </html>
